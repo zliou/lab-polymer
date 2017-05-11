@@ -1,0 +1,31 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-slider/paper-slider.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-custom-page">
+  <!-- Defines the element's style and local DOM -->
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 16px;
+      }
+    </style>
+
+    <div class="card">
+      <h1>New view</h1>
+
+      <p>Hellooooooooo</p>
+
+      <paper-slider value="30"></paper-slider>
+    </div>
+
+  </template>
+  <!-- Creates the element's prototype and registers it -->
+  <script>
+    Polymer({
+      is: 'my-custom-page'
+    });
+  </script>
+</dom-module>
